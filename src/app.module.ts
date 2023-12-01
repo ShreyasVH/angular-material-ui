@@ -8,13 +8,24 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { AppComponent } from './app/app.component';
 import { AppBarComponent } from './app/app-bar/app-bar.component';
 import { TabsComponent } from './app/tabs/tabs.component';
+import { ButtonsComponent } from './app/buttons/buttons.component';
+import { TextButtonsComponent } from './app/buttons/text-buttons/text-buttons.component';
+import { ContainedButtonsComponent } from './app/buttons/contained-buttons/contained-buttons.component';
+import { OutlinedButtonsComponent } from './app/buttons/outlined-buttons/outlined-buttons.component';
+import { IconButtonsComponent } from './app/buttons/icon-buttons/icon-buttons.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AppBarComponent,
-    TabsComponent
+    TabsComponent,
+    ButtonsComponent,
+    TextButtonsComponent,
+    ContainedButtonsComponent,
+    OutlinedButtonsComponent,
+    IconButtonsComponent
   ],
   imports: [
     BrowserModule,

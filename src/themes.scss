@@ -6,6 +6,7 @@ $my-primary: mat.define-palette(mat.$blue-palette, 400, 700, 200, A700);
 $my-secondary: mat.define-palette(mat.$purple-palette, 300);
 $my-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 $my-white: mat.define-palette(mat.$red-palette);
+$my-success: mat.define-palette(mat.$green-palette, 500);
 
 // The "warn" palette is optional and defaults to red if not specified.
 $my-warn: mat.define-palette(mat.$red-palette);
@@ -13,8 +14,10 @@ $my-warn: mat.define-palette(mat.$red-palette);
 $my-theme: mat.define-light-theme((
   color: (
     primary: $my-primary,
-    accent: $my-accent,
-    warn: $my-warn
+    accent: $my-secondary,
+    warn: $my-warn,
+    secondary: $my-secondary,
+    success: $my-success,
   ),
   contrast: (
     primary: $my-white
