@@ -14,7 +14,7 @@ import { ContainedButtonsComponent } from './app/buttons/contained-buttons/conta
 import { OutlinedButtonsComponent } from './app/buttons/outlined-buttons/outlined-buttons.component';
 import { IconButtonsComponent } from './app/buttons/icon-buttons/icon-buttons.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CheckboxesComponent } from './app/checkboxes/checkboxes.component';
 
 @NgModule({
   declarations: [
