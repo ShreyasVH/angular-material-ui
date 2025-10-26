@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { AppComponent } from './app/app.component';
 import { AppBarComponent } from './app/app-bar/app-bar.component';
@@ -25,7 +26,8 @@ import { CheckboxesComponent } from './app/checkboxes/checkboxes.component';
     TextButtonsComponent,
     ContainedButtonsComponent,
     OutlinedButtonsComponent,
-    IconButtonsComponent
+    IconButtonsComponent,
+    CheckboxesComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { CheckboxesComponent } from './app/checkboxes/checkboxes.component';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
+    MatCheckboxModule,
     BrowserAnimationsModule
   ],
   providers: [],
