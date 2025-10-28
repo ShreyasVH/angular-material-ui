@@ -4,6 +4,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app/app.component';
 import { AppBarComponent } from './app/app-bar/app-bar.component';
@@ -14,7 +16,8 @@ import { ContainedButtonsComponent } from './app/buttons/contained-buttons/conta
 import { OutlinedButtonsComponent } from './app/buttons/outlined-buttons/outlined-buttons.component';
 import { IconButtonsComponent } from './app/buttons/icon-buttons/icon-buttons.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { CheckboxesComponent } from './app/checkboxes/checkboxes.component';
+import { TableComponent } from './app/table/table.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TextButtonsComponent,
     ContainedButtonsComponent,
     OutlinedButtonsComponent,
-    IconButtonsComponent
+    IconButtonsComponent,
+    CheckboxesComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatButtonModule,
     MatTabsModule,
+    MatCheckboxModule,
+    MatTableModule,
     BrowserAnimationsModule
   ],
   providers: [],
