@@ -6,6 +6,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppComponent } from './app/app.component';
 import { AppBarComponent } from './app/app-bar/app-bar.component';
@@ -18,6 +20,8 @@ import { IconButtonsComponent } from './app/buttons/icon-buttons/icon-buttons.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CheckboxesComponent } from './app/checkboxes/checkboxes.component';
 import { TableComponent } from './app/table/table.component';
+import { LoaderComponent } from './app/loader/loader.component';
+import { LoaderDialogComponent } from './app/loader/loader-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,9 @@ import { TableComponent } from './app/table/table.component';
     OutlinedButtonsComponent,
     IconButtonsComponent,
     CheckboxesComponent,
-    TableComponent
+    TableComponent,
+    LoaderComponent,
+    LoaderDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +46,8 @@ import { TableComponent } from './app/table/table.component';
     MatTabsModule,
     MatCheckboxModule,
     MatTableModule,
+    MatDialogModule,
+    MatProgressSpinnerModule,
     BrowserAnimationsModule
   ],
   providers: [],
