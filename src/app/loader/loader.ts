@@ -1,14 +1,16 @@
 import { Component, inject, DestroyRef } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { LoaderDialogComponent } from './loader-dialog.component';
+import { LoaderDialog } from './loader-dialog';
 import { EventBusService } from '../event-bus.service';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import {MatButtonModule} from "@angular/material/button";
 
 @Component({
     selector: 'app-loader',
-    templateUrl: './loader.component.html'
+    templateUrl: './loader.html',
+    imports: [MatButtonModule]
 })
-export class LoaderComponent {
+export class Loader {
 
     readonly dialog = inject(MatDialog);
     private bus = inject(EventBusService);
@@ -27,7 +29,7 @@ export class LoaderComponent {
     }
 
     handleOpenDialog() {
-        const ref = this.dialog.open(LoaderDialogComponent, {
+        const ref = this.dialog.open(LoaderDialog, {
             panelClass: 'custom-dialog-surface',
             disableClose: true
         });

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import {MatTableModule} from "@angular/material/table";
 
 @Component({
     selector: 'app-table',
-    templateUrl: './table.component.html'
+    templateUrl: './table.html',
+    imports: [MatTableModule]
 })
-export class TableComponent {
+export class Table {
     columns: any = ['Country', 'Capital', 'Currency', 'Continent']
     data: any = [
         {
