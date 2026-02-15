@@ -12,6 +12,14 @@ html {
   ));
 }
 
+:root {
+  @include mat.card-overrides((
+          subtitle-text-color: #9b9b9b,
+          filled-container-color: white,
+          elevated-container-color: white
+  ));
+}
+
 .primary {
   @include mat.button-overrides((
       filled-container-color: rgb(66, 165, 245),
