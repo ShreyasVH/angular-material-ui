@@ -6,10 +6,11 @@ import {Checkboxes} from "../checkboxes/checkboxes";
 import {Buttons} from "../buttons/buttons";
 import {Chips} from "../chips/chips";
 import { MyCard as Card } from "../card/card";
+import { MySnackbar as SnackBar } from "../snackbar/snackbar";
 
 @Component({
     selector: 'app-tabs',
     templateUrl: './tabs.html',
-    imports: [Loader, MatTabsModule, Table, Checkboxes, Buttons, Chips, Card]
+    imports: [Loader, MatTabsModule, Table, Checkboxes, Buttons, Chips, Card, SnackBar]
 })
 export class Tabs { }

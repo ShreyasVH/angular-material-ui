@@ -125,3 +125,33 @@ html {
       outlined-container-shape: 4px
   ));
 }
+
+.success-snackbar {
+  @include mat.snack-bar-overrides((
+    container-color: rgb(54, 122, 56),
+    button-color: white
+  ));
+}
+
+.error-snackbar {
+  @include mat.snack-bar-overrides((
+    container-color: rgb(167, 58, 56),
+    button-color: white
+  ));
+}
+
+.info-snackbar {
+  @include mat.snack-bar-overrides((
+    container-color: rgb(2, 118, 170),
+    button-color: white
+  ));
+}
+
+.warning-snackbar {
+  @include mat.snack-bar-overrides((
+    container-color: rgb(255, 152, 0),
+    button-color: white
+  ));
+}
+
+
