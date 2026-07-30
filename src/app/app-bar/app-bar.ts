@@ -5,6 +5,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { Tabs } from '../tabs/tabs';
+import { ThemeSelectorComponent } from '../theme-selector/theme-selector'
 
 @Component({
   selector: 'app-bar',
@@ -16,7 +17,8 @@ import { Tabs } from '../tabs/tabs';
       MatButtonModule,
       MatSidenavModule,
       MatListModule,
-      Tabs
+      Tabs,
+      ThemeSelectorComponent
   ]
 })
 export class AppBar { }
